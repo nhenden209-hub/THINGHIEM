@@ -1,40 +1,29 @@
-# THINGHIEM
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Mô phỏng Trái Đất</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Thí nghiệm Địa lí 6 – Chuyển động tự quay</title>
 
 <style>
-:root {
-  --bg-color: #020617;
-  --panel-bg: #020617;
-  --text-color: #E5E7EB;
-  --sun-color: #FACC15;
-  --highlight: #38BDF8;
-  --day-color: #FDE047;
-  --night-color: #020617;
-  --equator-color: #F97316;
-  --winter-cold: #38BDF8;
-  --summer-hot: #EF4444;
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: #fff;
 }
 
-/* DÁN TOÀN BỘ CSS CỦA THẦY/CÔ NGAY DƯỚI DÒNG NÀY */
-</style>
+#canvas-container {
+    width: 100vw;
+    height: 100vh;
+    touch-action: none;
+}
 
-</head>
-
-<body>
-
-<h2>MÔ PHỎNG CHUYỂN ĐỘNG TRÁI ĐẤT</h2>
-<p class="subtitle">Dùng trong dạy học Địa lí</p>
-
-<div class="dashboard">
-  <div class="visual-panel">
-    <div class="panel-title">Mô phỏng</div>
-    <div class="sun"></div>
-  </div>
-</div>
-
-</body>
-</html>
+#ui-container {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0,15,30,0.88);
+    padding: 12px;
+    border-radius:
